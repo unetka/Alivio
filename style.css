@@ -77,7 +77,7 @@ header{
 
 @media(max-width: 950px){
     .nav{
-        height: 100vh;    
+        height: calc(100vh - 25px);    
     }
     .nav_items{
         display: flex;
