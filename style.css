@@ -82,7 +82,7 @@ header{
     .nav_items{
         display: flex;
         flex-direction: column;
-        height: 90%;
+        height: 80vh;
         
     }
     .menu_items{
