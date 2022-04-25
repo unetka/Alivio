@@ -250,6 +250,203 @@ section[type="first"]{
 
 }
 
+section[type="second"]{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #245852;
+    color: #fff;
+    padding: 229px;
+}
+
+.second_container{
+    display: flex;
+    height: 100%;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.second_title{
+    display: flex;
+    gap: 33px;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.second_title h2{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+}
+
+.second_title p{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 157%;
+}
+
+.second_title button{
+    width: 240px;
+    height: 65px;
+    background: #01996D;
+    border: 1px solid #01996D;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.second_video{
+    position: relative;
+    width: 768px;
+    aspect-ratio: 16/9;
+}
+
+.second_video video[controls]{
+height: 90%;
+width: 90%;
+}
+
+.second_video video{
+    position: absolute;
+    width: 695px;
+    height: 316px;
+    border-radius: 16.3326px;
+}
+
+
+
+
+@media(max-width: 792px){
+    .second_container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .second_title{
+        align-items: center;
+    }
+    .second_video{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 668px;
+        height: 400px;
+        aspect-ratio: 16/9;
+    }
+
+    .second_video video[controls]{
+        height: 90%;
+        width: 90%;
+    }
+
+    .second_video video{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 16.3326px;
+    }
+}
+
+
+@media(max-width: 652px){
+    .second_container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-content: center;
+    }
+    
+    .second_video{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 568px;
+        height: 300px;
+        aspect-ratio: 16/9;
+    }
+
+    .second_video video[controls]{
+        height: 100%;
+        width: 100%;    
+    }
+
+    .second_video video{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 16.3326px;
+    }
+}
+
+@media(max-width: 435px){
+    .second_container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .second_title{
+        margin-left: -90px;
+        align-items: center;
+    }
+    .second_video{
+        margin-left: -90px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 468px;
+        height: 225px;
+        aspect-ratio: 16/9;
+    }
+
+    .second_video video[controls]{
+        max-height: 225px;
+        width: 80%;    
+    }
+
+    .second_video video{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 16.3326px;
+    }
+}
+
+@media(max-width: 515px){
+    .second_container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .second_title{
+        align-items: center;
+    }
+    .second_video{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 468px;
+        height: 225px;
+        aspect-ratio: 16/9;
+    }
+
+    .second_video video[controls]{
+        max-height: 225px;
+        width: 80%;    
+    }
+
+    .second_video video{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 16.3326px;
+    }
+}
+
 @media(max-width: 1350px){
     .head{
         height: 100vh;
@@ -303,6 +500,13 @@ section[type="first"]{
     .first_cards{
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+    .second_container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .second_title{
         align-items: center;
     }
 }
